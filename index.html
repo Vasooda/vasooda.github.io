@@ -5,7 +5,7 @@
 <html lang="en">
 
   <header>
-      <title> Vasooda's Website </title>
+      <title> Vasooda's Portfolio </title>
       <link rel="stylesheet" href="css/master.css">
       <link rel="FaviconIcon" href="favicon.ico" type="image/x-icon">
       <link rel="shortcut" href="favicon.ico" type="image/xicon">
@@ -15,24 +15,130 @@
   </header>
 
   <body>
-      <img src="images/banner.jpg" width="75%" alt="banner">
-      <h1>Vasooda's Portal</h1>
-      <h2>About Me</h2>
-      <p> I am a product manager located in the Bay</p>
-      <p> I am a self taught developer and recently completed my Bachelors Degree</p>
-      <p> The question that's on my mind is: how can we secure, safeguard and advance the civil rights of all individuals?</p>
+      <div class="hero">
+        <img src="images/banner/banner_sidebar.png" width="100%" alt="banner">        <!-- <h1><span>Welcome to my </span> Portfolio </h1> -->
+      </div>
+
+    <section class="welcome">
+
+      <! -- wecome left -->
+      <div class="welcome-left">
+      </div>
+
+        <! -- wecome middle -->
+        <div class="welcome-middle"></div>
 
 
+        <! -- wecome right -->
+        <div class="welcome-right"></div>
+      </section>
+
+      <section class="about-me">
+        <img class="about image" src="images/vasooda_dp.jpg" alt="Display Picture" class="responsive" width="190" height="215" alignment="left">
+        <figcaption> <h4 class="portfolio-title"> Communications Manager</h4>
+          <p class="portfolio-disc">A sort description that goes here </p>
+          <a href="#" class="portfolio-link"> More Info </a>
+        </figcaption>
+
+        <h1 class="about-title"> Vasooda Portfolio</h1>
+        <h2 class="about-subtitle"> Communications Manager</h2>
+        <div class="about-text">
+          <p> I am located in the Bay</p>
+          <p> I am a self taught developer and recently completed my Bachelors Degree</p>
+          <p> The question that's on my mind is: how can we secure, safeguard and advance the civil rights of all individuals?</p>
+      </section>
+
+      <section class="portfolio">
+          <h1> My Work</h1>
+
+        <!-- Portfolio item 1 -->
+        <div class="portfolio-item">
+
+          <!-- Portfolio item 1 -->
+          <figure class="portfolio-item featured">
+            <img src="images/portfolio-01.jpg" alt="Display Picture" class="responsive" width="190" height="215" alignment="left">
+            <figcaption> <h2 class="portfolio-title">Example 1</h2>
+              <p class="portfolio-disc">A sort description that goes here </p>
+              <a href="#" class="portfolio-link"> More Info </a>
+            </figcaption>
+          </figure>
+
+          <!-- Portfolio item 2 -->
+          <figure class="portfolio-item">
+            <img src="images/portfolio-02.jpg" alt="Display Picture" class="responsive" width="190" height="215" alignment="left">
+            <figcaption> <h2 class="portfolio-title">Example 2</h2>
+              <p class="portfolio-disc">A sort description that goes here </p>
+              <a href="#" class="portfolio-link"> More Info </a>
+            </figcaption>
+          </figure>
+
+          <!-- Portfolio item 3 -->
+          <figure class="portfolio-item">
+            <img src="images/portfolio-03.jpg" alt="Display Picture" class="responsive" width="190" height="215" alignment="left">
+            <figcaption> <h2 class="portfolio-title">Example 3</h2>
+              <p class="portfolio-disc">A sort description that goes here </p>
+              <a href="#" class="portfolio-link"> More Info </a>
+            </figcaption>
+          </figure>
+
+          <!-- Portfolio item 4 -->
+          <figure class="portfolio-item">
+            <img src="images/portfolio-04.jpg" alt="Display Picture" class="responsive" width="190" height="215" alignment="left">
+            <figcaption> <h2 class="portfolio-title">Example 4</h2>
+              <p class="portfolio-disc">A sort description that goes here </p>
+              <a href="#" class="portfolio-link"> More Info </a>
+            </figcaption>
+          </figure>
+
+          <!-- Portfolio item 5 -->
+          <figure class="portfolio-item">
+            <img src="images/portfolio-05.jpg" alt="Display Picture" class="responsive" width="190" height="215" alignment="left">
+            <figcaption> <h2 class="portfolio-title">Example 5</h2>
+              <p class="portfolio-disc">A sort description that goes here </p>
+              <a href="#" class="portfolio-link"> More Info </a>
+            </figcaption>
+          </figure>
+
+  </div>
+
+<!-- links
       <h2>Credentials and Portfolio</h2>
 
-      <p><a href="resume.html"> My Resume </a> | <a href="http://github.com/vasooda"> My GitHub </a> </p>
+      <p><a href="resume.html"> My Resume </a> | <a href="http://github.com/vasooda"> My GitHub </a> | <a href="passion.html"> Passion Project </a> </p>
+-->
 
+<!-- contact form -->
+
+<section class="contact">
       <h2>Contact</h2>
 
+      <form action="">
+        <label class="name">
+          Name: <input type="text" id="name">
+        </label>
+
+          <label class="email">
+            Email: <input type="email">
+          </label>
+
+          <label message="message">
+            Message: <textarea name="" id="message">
+            </textarea>
+          </label>
+        </form>
+
+<!-- email link
       <p>Email: <a href="mailto:vasooda@gmail.com">vasooda@gmail.com</a></p>
+-->
   </body>
 
-  <footer>
+  <footer style=background: black>
+    <p> Find me here </p>
+    <div class="social icons">
+      <img class="social-icon" src="img/twitter.syg" alt="twitter">
+      <img class="social-icon" src="img/medium.syg" alt="twitter">
+      <img class="social-icon" src="img/github.syg" alt="twitter">
+    </div>
     <hr>
     <code> Copyright (C) 2020 Vasooda Kumar </code>
   </footer>

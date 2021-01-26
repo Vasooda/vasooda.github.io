@@ -15,28 +15,35 @@
   }
 
   body {
-    background-color: yellow; /* set the background color here */
+    background-color: white; /* set the background color here */
     color: black; /* set the text color to black here */
     font-family: Arial, Helvetica, sans-serif; /* set the font here */
-    text-align: center; /* set the text alignment here */
+    /*text-align: left; /* set the text alignment here */
    }
 
   footer
   {
     margin-top: 2rem;
     margin-bottom: 2rem;
+  }
+
+  .responsive {
+    max-width: 100%;
+    height: auto;
 
   }
 
   h1 {
     margin-bottom: 0.5rem;
-    margin-top: 3rem;
+    margin-top: 1rem;
+    text-align: center;
    }
 
   h2 {
     color: #075AAB;
     margin-bottom: 2.5rem;
     margin-top: 2.5rem;
+    text-align: center;
     /* set the text color of to #075AAB here */
     /* set both the bottom margin and top margin to 2.5rem here */
    }

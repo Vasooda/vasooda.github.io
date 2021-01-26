@@ -1,0 +1,209 @@
+<!-- MAIN (Center website) -->
+<html>
+
+<div class="main">
+
+  <html lang="en">
+
+    <header>
+        <title> Vasooda's Portfolio </title>
+        <link rel="stylesheet" href="css/passion.css">
+        <link rel="FaviconIcon" href="favicon.ico" type="image/x-icon">
+        <link rel="shortcut" href="favicon.ico" type="image/xicon">
+
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,500&display=swap" rel="stylesheet">
+        <!-- Montserrat
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+        -->
+
+        <meta name="viewport" content="width=divice-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="name" content="Vasooda Kumar's Portal">
+        <meta name="robot" content="noindex, nofollow">
+
+    </header>
+
+    <body>
+      <div class="hero">
+        <img src="images/banner/banner_sidebar_white.png" width="100%" alt="banner">        <!-- <h1><span>Welcome to my </span> Portfolio </h1> -->
+      </div>
+          <!-- <h1><span>Welcome to my </span> Portfolio </h1> -->
+
+<!--
+        <section class="about-me">
+        <h1>Vasooda Kumar</h1>
+          <img class="about image" src="images/dp/vasooda_dp.jpg" alt="Display Picture" class="responsive" width="190" height="215" alignment="left">
+          <figcaption> <h4 class="portfolio-title"> Communications Manager</h4>
+            <p class="portfolio-disc">A sort description that goes here </p>
+            <a href="#" class="portfolio-link"> More Info </a>
+          </figcaption>
+
+          <h1 class="about-title"> Vasooda Portfolio</h1>
+          <h2 class="about-subtitle"> Communications Manager</h2>
+          <div class="about-text">
+            <p> I am located in the Bay</p>
+            <p> I am a self taught developer and recently completed my Bachelors Degree</p>
+            <p> The question that's on my mind is: how can we secure, safeguard and advance the civil rights of all individuals?</p>
+        </section>
+
+ -->
+
+<!-- Portfolio Gallery Grid -->
+
+<!-- <h3><center>RECENT WORK</center></h3> -->
+<div id="myBtnContainer">
+  <center>
+  <br>
+  <p>Helping organizations create effective campaigns that work to advance economic and racial justice.</p>
+
+<!-- About Me -->
+  <!--  <p> My aim is to contribute to solutions that answer the question: </p>
+    <p> how can we secure, safeguard and advance the civil rights of all individuals in this lifetime?</p> -->
+
+  <button class="btn active" onclick="filterSelection('all')" style="color: grey"> Projects</button>
+  <button class="btn active" onclick="filterSelection('all')" style="color:grey"> Contact</button>
+
+
+  <!-- sorting of class categories for each project -->
+<!--
+  <button class="btn" onclick="filterSelection('nature')"> Social Justice</button>
+  <button class="btn" onclick="filterSelection('cars')"> Writing</button>
+  <button class="btn" onclick="filterSelection('people')"> People</button>
+-->
+</center>
+</div>
+
+<!-- Portfolio Gallery Grid -->
+<div class="row">
+  <div class="column nature">
+    <div class="content">
+      <a href="blm.html">
+      <img src="images/defund/1.png" alt="Right2Justice" style="width:100%">
+    </div>
+  </div>
+  <div class="column nature">
+    <div class="content">
+      <a href="immigration.html">
+      <img src="images/immigration/immigration_thumbnail.jpeg" alt="Immigration Reform" style="width:100%">
+    </div>
+  </div>
+  <div class="column nature">
+    <div class="content">
+      <a href="agile.html">
+      <img src="images/agile/agile_thumbnail.jpg" alt="Agile" style="width:100%">
+    </div>
+  </div>
+
+  <div class="column cars">
+    <div class="content">
+      <a href="lobby.html">
+      <img src="images/Lobby/lobby.png" alt="The Lobby" style="width:100%">
+    </div>
+  </div>
+  <div class="column cars">
+    <div class="content">
+      <a href="sitenhance.html">
+      <img src="images/sitenhance/logos/se_sign.jpg" alt="Car" style="width:100%">
+    </div>
+  </div>
+  <div class="column cars">
+    <div class="content">
+      <a href="wsa.html">
+      <img src="images/wsa/wsa_thumbnail.png" alt="Car" style="width:100%">
+    </div>
+  </div>
+
+  <div class="column people">
+    <div class="content">
+      <a href="suw.html">
+      <img src="images/suw/suw_thumbnail.png" alt="People" style="width:100%">
+    </div>
+  </div>
+  <div class="column people">
+    <div class="content">
+      <a href="asa.html">
+      <img src="images/asa/asa_logo.png" alt="People" style="width:100%">
+    </div>
+  </div>
+  <div class="column people">
+    <div class="content">
+      <a href="uhd.html">
+      <img src="images/uhd/uhd_logo.png" alt="People" style="width:100%">
+    </div>
+  </div>
+
+<! -- JavaScript in Body -->
+
+
+
+<script>
+filterSelection("all") // Execute the function and show all columns
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("column");
+  if (c == "all") c = "";
+  // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+// Show filtered elements
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {
+      element.className += " " + arr2[i];
+    }
+  }
+}
+
+// Hide elements that are not selected
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}</script>
+
+<!-- Social Icons -->
+<!-- Add icon library -->
+
+<footer>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!-- Add font awesome icons -->
+<center>
+<a href="https://twitter.com/Vasooda" class="fa fa-twitter" style="color: grey"></a>
+<a href="https://www.instagram.com/reservoirdog_ollie/" class="fa fa-instagram" style="color: grey"></a>
+<a href="https://medium.com/@Vasooda" class="fa fa-medium" style="color: grey"></a>
+  <br>
+  <h5 class="footer" style="color: grey"><center>( c) Vasooda Kumar 2020</center></h5>
+</center>
+</footer>
+</body>
+<!-- END GRID -->
+</div>
+
+</html>
