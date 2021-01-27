@@ -33,11 +33,11 @@
   position: relative;
   top: 45%;
   width: auto;
-  padding: 3px; /*decreases the size of hover*/
+  padding: 5px; /*decreases the size of hover*/
   margin-top: -50px;
   color: black;
   font-weight: bold;
-  font-size: 15px;
+  font-size: 12px;
   border-radius: 0 3px 3px 0; /*shaping border around hover*/
   user-select: none;
   -webkit-user-select: none;
@@ -107,7 +107,7 @@
   border: none;
   padding: 16px 16px;
   display: inline-block;
-  font-size: 13px;
+  font-size: 12px;
   margin: 5px 2px;
   transition-duration: 0.4s;
   cursor: pointer;
