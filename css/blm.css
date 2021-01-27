@@ -21,6 +21,12 @@
   margin: 0px 0px;
 }
 
+/* Hide the images by default */
+.mySlidestwo {
+  display: none;
+  margin: 0px 0px;
+}
+
 /* Add a pointer when hovering over the thumbnail images */
 .cursor {
   cursor: pointer;
@@ -74,9 +80,14 @@
 /* Container for image text */
 .caption-container {
   text-align: center;
-  background-color: #222;
+  background-color: #fff;
   padding: 2px 16px;
   color: white;
+  font-size: 8px;
+}
+
+.caption {
+  font-size: 10px;
 }
 
 .row:after {
@@ -114,6 +125,14 @@
 }
 
 .button:hover {background-color: #fff;}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 15px;
+}
+
+
 
 /* Style the buttons
 .btn {

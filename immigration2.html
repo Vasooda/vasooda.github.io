@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+
+<!-- site data (not visible) -->
+<head>
+
+      <title> Immigration Campaigns </title>
+
+      <!-- stylesheet & favicon -->
+      <link rel="stylesheet" href="css/blm.css">
+      <!--  alternative style sheet <link rel="stylesheet" href="css/immigration.css"> -->
+      <!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
+      <link rel="FaviconIcon" href="images/favicon.ico" type="image/x-icon">
+      <link rel="shortcut" href="images/favicon.ico" type="image/xicon">
+
+      <!-- metadata -->
+      <meta name="author" content="Vasooda Kumar">
+      <meta name="keywords" content="HTML, CSS, JavaScript">
+      <meta name="description" content="Work Sample of Immigration Campaigns">
+      <meta name="viewport" content="width=divice-width, initial-scale=1, shrink-to-fit=no">
+      <meta name="robot" content="noindex, nofollow">
+      <meta http-equiv="refresh" content="30">
+
+</head>
+
+<!-- Start of site body -->
+
+<body>
+
+    <!-- hero image -->
+    <div class="hero">
+    <img src="images/banner/ibblue.png" width="100%" alt="hero-image">
+    </div>
+
+    <!-- buttons -->
+    <center>
+    <button class="button">
+    <a style="text-decoration:none" href="index.html" >Projects</a>
+    &nbsp;
+    <a style="text-decoration:none" href="contact.html" style="color:grey">Contact</a>
+    </button>
+    <center>
+
+
+    <!-- Container for the image gallery -->
+    <div class="container">
+    <center>
+
+      <!-- Full-width images with click through arrow -->
+      <div class="mySlides">
+        <div class="numbertext">1 / 12</div>
+        <img src="images/immigration/cmr/cmrone.png" style="width:60%">
+      </div>
+
+      <div class="mySlides">
+          <div class="numbertext">2 / 6</div>
+          <img src="images/immigration/cmr/cmrtwo.png" style="width:60%">
+      </div>
+
+      <div class="mySlides">
+          <div class="numbertext">3 / 6</div>
+          <img src="images/immigration/cmr/cmrthree.png" style="width:60%">
+      </div>
+
+      <div class="mySlides">
+          <div class="numbertext">4 / 6</div>
+          <img src="images/immigration/cmr/cmrfour.png" style="width:60%">
+      </div>
+
+      <div class="mySlides">
+          <div class="numbertext">5 / 6</div>
+          <img src="images/immigration/cmr/cmrfive.png" style="width:60%">
+      </div>
+
+      <div class="mySlides">
+          <div class="numbertext">6 / 6</div>
+          <img src="images/immigration/cmr/cmrsix.png" style="width:60%">
+      </div>
+
+      <div class="mySlides">
+          <div class="numbertext">7 / 7</div>
+          <img src="images/immigration/cmr/cmrseven.png" style="width:60%">
+      </div>
+
+      <div class="mySlides">
+          <div class="numbertext">8 / 8</div>
+          <img src="images/immigration/cmr/cmreight.png" style="width:60%">
+      </div>
+
+      <div class="mySlides">
+          <div class="numbertext">9 / 9</div>
+          <img src="images/immigration/cmr/cmrnine.png" style="width:60%">
+      </div>
+
+      <div class="mySlides">
+          <div class="numbertext">10 / 10</div>
+          <img src="images/immigration/cmr/cmrten.png" style="width:60%">
+      </div>
+
+      <div class="mySlides">
+          <div class="numbertext">11 / 11</div>
+          <img src="images/immigration/cmr/cmreleven.png" style="width:60%">
+      </div>
+
+      <div class="mySlides">
+          <div class="numbertext">12 / 12</div>
+          <img src="images/immigration/cmr/cmrtwelve.png" style="width:60%">
+      </div>
+
+
+    <div class="w3-content w3-display-container">
+      <img class="mySlides" src="img_snowtops.jpg" style="width:100%">
+      <img class="mySlides" src="img_lights.jpg" style="width:100%">
+      <img class="mySlides" src="img_mountains.jpg" style="width:100%">
+      <img class="mySlides" src="img_forest.jpg" style="width:100%">
+      <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1, 0)">&#10094;</button>
+      <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1, 0)">&#10095;</button>
+    </div>
+
+    <div class="w3-content w3-display-container">
+      <img class="mySlides2" src="img_la.jpg" style="width:100%">
+      <img class="mySlides2" src="img_ny.jpg" style="width:100%">
+      <img class="mySlides2" src="img_chicago.jpg" style="width:100%">
+      <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1, 1)">&#10094;</button>
+      <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1, 1)">&#10095;</button>
+    </div>
+
+    <script>
+    var slideIndex = [1,1];
+    var slideId = ["mySlides1", "mySlides2"]
+    showDivs(1, 0);
+    showDivs(1, 1);
+
+    function plusDivs(n, no) {
+      showDivs(slideIndex[no] += n, no);
+    }
+
+    function showDivs(n, no) {
+      var i;
+      var x = document.getElementsByClassName(slideId[no]);
+      if (n > x.length) {slideIndex[no] = 1}
+      if (n < 1) {slideIndex[no] = x.length}
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      x[slideIndex[no]-1].style.display = "block";
+    }
+    </script>
+
+    </body>
+    </html>
